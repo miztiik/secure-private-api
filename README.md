@@ -2,6 +2,8 @@
 
 Mystique Unicorn App is a containerized microservice made of many APIs. As Mystique Corp is dealing with Personally Identifiable Information(PII) data, they intend to secure their api. Ideally the APIs should be accessible from within their own corporate networks only and all other access to the APIs should be denied.
 
+To achieve this enhanced security, We can deploy the API as an `PRIVATE` type api and make it accessible only from inside a particular VPC using API Gateway Resource Policy. In additon to these, we can also add a security group to our APIs to restrict them access from certain IP/Ports.
+
 ![Miztiik Serverless API Authorization](images/miztiik_secure_private_api.png)
 
 In this article, we will build the above architecture. using Cloudformation generated using [AWS Cloud Development Kit (CDK)][102]. The architecture has been designed in a modular way so that we can build them individually and integrate them together. The prerequisites to build this architecture are listed below
