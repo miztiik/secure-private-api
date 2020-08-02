@@ -1,7 +1,16 @@
 {
   "app": "python3 app.py",
+  "versionReporting": false,
+  "requireApproval": "never",
   "context": {
-    "@aws-cdk/core:enableStackNameDuplicates": "true",
-    "aws-cdk:enableDiffNoFail": "true"
+    "owner": "Mystique",
+    "github_profile": "https://github.com/miztiik",
+    "about_me": "https://github.com/miztiik/about-me",
+    "youtube_profile": "https://youtube.com/c/valaxytechnologies",
+    "udemy_profile": "https://www.udemy.com/user/n-kumar",
+    "skill_profile": "https://www.skillshare.com/r/profile/Kumar/407603333",
+    "learn_aws_advanced_security": "https://www.udemy.com/course/aws-cloud-security-proactive-way",
+    "service_name": "secure-private-api",
+    "github_repo_url": "https://github.com/miztiik/big-data-analytics-workshops/secure-private-api"
   }
 }

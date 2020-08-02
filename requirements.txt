@@ -1,1 +1,6 @@
 -e .
+aws_cdk.aws_logs
+aws_cdk.aws_iam
+aws_cdk.aws_lambda
+aws_cdk.aws_apigateway
+aws_cdk.aws_ec2
