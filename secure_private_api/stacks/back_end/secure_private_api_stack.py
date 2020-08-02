@@ -170,7 +170,7 @@ class SecurePrivateApiStack(core.Stack):
         # Outputs
         output_1 = core.CfnOutput(
             self,
-            "ApiUrl",
+            "SecureApiUrl",
             value=f"{greeter.url}",
-            description="Use a browser to access this url."
+            description="Use an utility like curl from the same VPC as the API to invoke it."
         )

@@ -75,8 +75,21 @@ class ApiConsumerStack(core.Stack):
             description="To know more about this automation stack, check out our github page."
         )
 
-        output_1 = core.CfnOutput(self,
-                                  "ApiConsumer",
-                                  value=f'http://{web_app_server.instance_private_ip}',
-                                  description=f"Use curl to access secure private Api. For ex, curl {{API_URL}}"
-                                  )
+        output_1 = core.CfnOutput(
+            self,
+            "ApiConsumerPrivateIp",
+            value=f'http://{web_app_server.instance_private_ip}',
+            description=f"Use curl to access secure private Api. For ex, curl {{API_URL}}"
+        )
+        output_2 = core.CfnOutput(
+            self,
+            "ApiConsumerInstance",
+            value=(
+                f"https://console.aws.amazon.com/ec2/v2/home?region="
+                f"{core.Aws.REGION}"
+                f"#Instances:search="
+                f"{web_app_server.instance_id}"
+                f";sort=instanceId"
+            ),
+            description=f"Login to the instance using Systems Manager and use curl to access the SecureApiUrl"
+        )
