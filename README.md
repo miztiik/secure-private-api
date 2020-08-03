@@ -218,7 +218,7 @@ Thank you for your interest in contributing to our project. Whether it's a bug r
 [2]: https://aws.amazon.com/premiumsupport/knowledge-center/api-gateway-private-endpoint-connection/
 [3]: https://docs.aws.amazon.com/apigateway/latest/developerguide/security-best-practices.html
 [4]: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-to-api.html
-[5]: https://aws.amazon.com/blogs/compute/protecting-your-api-using-amazon-api-gateway-and-aws-waf-part-i/a
+[5]: https://aws.amazon.com/blogs/compute/protecting-your-api-using-amazon-api-gateway-and-aws-waf-part-i/
 [6]: https://www.youtube.com/watch?v=UnoVqaTGwzM
 [7]: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-iam-policy-examples-for-api-execution.html
 [8]: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-endpoint-policies.html
