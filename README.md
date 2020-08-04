@@ -114,7 +114,7 @@ In this article, we will build the above architecture. using Cloudformation gene
       Initiate the deployment with the following command,
 
       ```bash
-      cdk api-consumer
+      cdk deploy api-consumer
       ```
 
       ```bash
