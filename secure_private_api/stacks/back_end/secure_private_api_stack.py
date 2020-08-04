@@ -46,7 +46,7 @@ class SecurePrivateApiStack(core.Stack):
         greeter_fn = _lambda.Function(
             self,
             "getSquareFn",
-            function_name="greeter_fn",
+            function_name=f"greeter_fn_{id}",
             runtime=_lambda.Runtime.PYTHON_3_7,
             handler="index.lambda_handler",
             code=_lambda.InlineCode(greeter_fn_code),
@@ -125,7 +125,7 @@ class SecurePrivateApiStack(core.Stack):
                     conditions={
                         "StringEquals":
                         {
-                            "aws:sourceVpc": "test"
+                            "aws:sourceVpc": f"{secure_private_api_01_endpoint.vpc_endpoint_id}"
                         }
                     },
                     sid="DenyAllNonVPCAccessToApi"
