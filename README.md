@@ -158,13 +158,13 @@ In this article, we will build the above architecture. using Cloudformation gene
 
     If you want to destroy all the resources created by the stack, Execute the below command to delete the stack, or _you can delete the stack from console as well_
 
-    - Resources created during [deployment](#-resource-deployment-using-aws-cdk)
+    - Resources created during deployment
     - Delete CloudWatch Lambda LogGroups
     - _Any other custom resources, you have created for this demo_
 
     ```bash
     # Delete from cdk
-    cdk destroy cognito-identity-provider
+    cdk destroy {STACK_NAMES}
 
     # Follow any on-screen prompts
 
