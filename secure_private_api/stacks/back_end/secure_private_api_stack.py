@@ -123,7 +123,7 @@ class SecurePrivateApiStack(core.Stack):
                     resources=[core.Fn.join("", ["execute-api:/", "*"])],
                     effect=_iam.Effect.DENY,
                     conditions={
-                        "StringEquals":
+                        "StringNotEquals":
                         {
                             "aws:sourceVpc": f"{secure_private_api_01_endpoint.vpc_endpoint_id}"
                         }
