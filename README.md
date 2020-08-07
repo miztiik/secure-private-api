@@ -1,10 +1,12 @@
 # Security best practices in Amazon API Gateway
 
-Mystique Unicorn App is a containerized microservice made of many APIs. As Mystique Corp is dealing with Personally Identifiable Information(PII) data, they intend to secure their api. Ideally the APIs should be accessible from within their own corporate networks only and all other access to the APIs should be denied.
+Mystique Corp us buiding a stealth p-kon app. This app is a containerized microservice made of many APIs. As the app handles Personally Identifiable Information(PII) data, they intend to secure their api and do not want to expose it to the internet. Ideally the APIs should be accessible from within their own corporate networks only; All other access to the APIs should be denied.
+
+The following picture represents a sample public api, that is to be avoided.
 
 ![Miztiik Asynchronous Messaging with AWS Lambda](images/miztiik_messaging.png)
 
-To achieve this enhanced security, We can deploy the API as an `PRIVATE` type api and make it accessible only from inside a particular VPC using API Gateway Resource Policy. In additon to these, we can also add a security group to our APIs to restrict them access from certain IP/Ports.
+To achieve this enhanced security, We can deploy the api as an `PRIVATE` endpoint. Amazon API Gateway private endpoints enable you to build private API–based services inside your own VPCs. You can now keep both the frontend to your API (API Gateway) and the backend service (Lambda, EC2, ECS, etc.) private inside your VPC. In additon to these, we can also add a security group to our APIs to restrict them access from certain IP/Ports.
 
 ![Miztiik Serverless API Authorization](images/miztiik_secure_private_api.png)
 
@@ -178,7 +180,7 @@ In this article, we will build the above architecture. using Cloudformation gene
 
 ## 📌 Who is using this
 
-This repository to teaches cloudformation to new developers, Solution Architects & Ops Engineers in AWS. Based on that knowledge these Udemy [course #1][103], [course #2][102] helps you build complete architecture in AWS.
+This repository to teaches how to enhance api security to new developers, Solution Architects & Ops Engineers in AWS. Based on that knowledge these Udemy [course #1][103], [course #2][102] helps you build complete architecture in AWS.
 
 ### 💡 Help/Suggestions or 🐛 Bugs
 
