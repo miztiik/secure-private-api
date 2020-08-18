@@ -45,7 +45,7 @@ class SecurePrivateApiStack(core.Stack):
 
         greeter_fn = _lambda.Function(
             self,
-            "getSquareFn",
+            "secureGreeterFn",
             function_name=f"greeter_fn_{id}",
             runtime=_lambda.Runtime.PYTHON_3_7,
             handler="index.lambda_handler",
